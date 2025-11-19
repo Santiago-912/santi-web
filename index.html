@@ -1,11 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi Primera Web</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Santi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #0d0d0d;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    nav {
+      background: #1a1a1a;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      color: white;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #007bff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #0d0d0d;
+      color: white;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #007bff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, soy Santi y esta es mi primera página web</h1>
-  <p>Sí, la hice gratis y funciona ;)</p>
+  <header>
+    <h1>Portfolio Profesional - Santi</h1>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Hola, soy Santi</h1>
+    <p>Creo páginas web modernas, rápidas y funcionales.</p>
+    <a class="btn" href="#contacto">Contactarme</a>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un desarrollador web en crecimiento que crea sitios limpios, profesionales y optimizados. Me gusta solucionar problemas y hacer proyectos que realmente funcionen.
+    </p>
+  </section>
+
+  <section id="servicios" class="section">
+    <h2>Servicios</h2>
+    <ul>
+      <li>✔ Creación de páginas web</li>
+      <li>✔ Landing pages profesionales</li>
+      <li>✔ Optimización de rendimiento</li>
+      <li>✔ Configuración básica SEO</li>
+      <li>✔ Hosting y publicación</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Podés enviarme un mensaje por email o redes sociales.</p>
+    <p><strong>Email:</strong> santidev@example.com</p>
+  </section>
+
+  <footer>
+    © 2025 Santi - Portfolio Profesional
+  </footer>
 </body>
 </html>
